@@ -50,7 +50,7 @@ h2 {
     padding: 15px 25px;
     color: #fff; }
   .maine-menu .navbar-nav li.active a, .maine-menu .navbar-nav li:hover a, .maine-menu .navbar-nav li:visited a {
-    color: #e90e65; }
+    color: #364f3b; }
   .maine-menu .bar1, .maine-menu .bar2, .maine-menu .bar3 {
     width: 25px;
     height: 2px;
@@ -177,13 +177,13 @@ h2 {
     .contact-pop .content p {
       color: #584f53; }
     .contact-pop .content hr {
-      background-color: #e90e65;
+      background-color: #124f87;
       width: 50px;
       height: 5px;
       border: none;
       margin-left: 0; }
     .contact-pop .content a {
-      background-color: #e90e65;
+      background-color: #124f87;
       width: 158px;
       border-radius: 40px;
       color: #fefefe;
@@ -386,7 +386,7 @@ h2 {
   width: 100%; }
 
 .fh5co-recent-work {
-  background: #e90e65;
+  background: #8f1c3d;
   padding: 100px 0; }
   @media (max-width: 767px) {
     .fh5co-recent-work {
@@ -415,7 +415,7 @@ h2 {
       margin: 0 2px; }
       .recent .owl-carousel .owl-nav .owl-prev:hover, .recent .owl-carousel .owl-nav .owl-next:hover {
         background: #fff;
-        color: #e90e65; }
+        color: #8f1c1c; }
       .recent .owl-carousel .owl-nav .owl-prev span, .recent .owl-carousel .owl-nav .owl-next span {
         position: relative;
         display: block;
@@ -436,7 +436,7 @@ h2 {
       margin-bottom: 5px; }
     .recent .card p {
       font-size: 14px;
-      color: #e90e65; }
+      color: #FBF3F2; }
     .recent .card.active, .recent .card:hover {
       transform: scale(1.05, 1.1);
       -webkit-transform: scale(1.05, 1.1);
@@ -449,7 +449,7 @@ h2 {
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95));
         background: -ms-linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95)); }
       .recent .card.active p, .recent .card:hover p {
-        color: #e587ac; }
+        color: #97f5ff; }
   .recent .card-img-overlay {
     border-radius: 15px;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.85));
@@ -467,14 +467,14 @@ h2 {
       margin-top: 100px; } }
 
 .fh5co-portfolio {
-  background-color: #f2d5d7;
-  background-image: url(../img/camera-bg.jpg);
+  background-color: #282f6c;
+  background-image: url(../img/camera-bg);
   background-position: right bottom;
   background-repeat: no-repeat;
   padding: 100px 0;
   margin-top: 0; }
   .fh5co-portfolio h2 {
-    color: #584f53;
+    color: #f4f4fa;
     margin-bottom: 20px; }
   .fh5co-portfolio .card {
     margin-bottom: 0; }
@@ -519,10 +519,10 @@ h2 {
         float: left !important; } }
 
 .activity {
-  background: #f3e7e8;
+  background: #f3e7e7;
   padding-bottom: 50px; }
   .activity .recent {
-    margin-top: 0; }
+    margin-top: 0 ; }
   .activity h2 {
     color: #584f53; }
   .activity .owl-carousel .owl-nav .owl-prev, .activity .owl-carousel .owl-nav .owl-next {
@@ -548,7 +548,7 @@ h2 {
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95));
         background: -ms-linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95)); }
       .activity .card.active p, .activity .card:hover p {
-        color: #e587ac; }
+        color: #87d1e5; }
     .activity .card h5 {
       font-size: 22px; }
     .activity .card:hover a {
@@ -569,7 +569,7 @@ h2 {
 .fh5co-about-me {
   padding: 0; }
   .fh5co-about-me .card-img-overlay {
-    background-color: rgba(233, 14, 101, 0.902); }
+    background-color: rgba(19, 9, 57, 0.902); }
   .fh5co-about-me h2 {
     text-align: center;
     color: #fff;
@@ -716,7 +716,7 @@ h2 {
       background: #fff; }
 
 footer {
-  background: #e90e65; }
+  background: #bd3c3c; }
   footer iframe {
     height: 100%;
     width: 100%; }
