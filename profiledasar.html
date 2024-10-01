@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Layout</title>
+    <title>Profile Layout</title>
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
     <!-- External CSS -->
@@ -18,7 +18,7 @@
             padding: 0;
         }
 
-        /* Image placeholder */
+        /* Profile Picture */
         .image-container {
             margin-top: 50px;
         }
@@ -29,82 +29,91 @@
             background-color: black;
             border-radius: 50%;
             display: inline-block;
+            background-image: url('profile.jpg'); /* Replace with your image file */
+            background-size: cover;
+            background-position: center;
         }
 
+        /* Name Box */
         .rectangle-bar {
             width: 300px;
             height: 50px;
             background-color: black;
             margin: 20px auto;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
         }
 
+        /* Social Media Links */
         .small-circles {
-            display: inline-block;
-            margin: 10px 10px;
+            margin: 20px;
         }
 
         .small-circle {
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             background-color: black;
             border-radius: 50%;
             display: inline-block;
+            margin: 0 10px;
         }
 
+        .small-circle a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Date and Time Box */
         .small-rectangle {
-            width: 80px;
-            height: 20px;
+            width: 150px;
+            height: 30px;
             background-color: black;
-            margin: 10px auto;
+            margin: 20px auto;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
         }
 
         h1 {
             font-size: 24px;
             color: #333;
         }
-
-        footer {
-            margin-top: 50px;
-            font-size: 14px;
-            color: #777;
-        }
-
-        /* Date and Time */
-        .date-time {
-            margin-top: 30px;
-        }
     </style>
 </head>
 <body>
-    <!-- Picture Section -->
+    <!-- Profile Picture -->
     <div class="image-container">
         <div class="circle-image"></div>
     </div>
 
-    <!-- Heading -->
-    <h1>Your Title Goes Here</h1>
-
-    <!-- Rectangle Bar -->
-    <div class="rectangle-bar"></div>
-
-    <!-- Small Circles -->
-    <div class="small-circles">
-        <div class="small-circle"></div>
-        <div class="small-circle"></div>
+    <!-- Name Box -->
+    <div class="rectangle-bar">
+        Your Full Name
     </div>
 
-    <!-- Small Rectangle -->
-    <div class="small-rectangle"></div>
+    <!-- Social Media Links -->
+    <div class="small-circles">
+        <div class="small-circle"><a href="https://facebook.com" target="_blank">FB</a></div>
+        <div class="small-circle"><a href="https://twitter.com" target="_blank">TW</a></div>
+        <div class="small-circle"><a href="https://instagram.com" target="_blank">IG</a></div>
+    </div>
 
-    <!-- Footer with Date and Time -->
-    <footer>
-        <div class="date-time">
-            <!-- Current Date and Time -->
-            <p id="datetime"></p>
-        </div>
-    </footer>
+    <!-- Date and Time Box -->
+    <div class="small-rectangle" id="datetime">
+        <!-- Date and time will be inserted here -->
+    </div>
 
-    <!-- JavaScript to get the current date and time -->
+    <!-- JavaScript to get current date and time -->
     <script>
         const dateTime = new Date();
         document.getElementById("datetime").innerHTML = dateTime.toLocaleString();
