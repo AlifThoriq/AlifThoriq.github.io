@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style_Elektronika.css">
+    <title>Alif</title>
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* CSS */
+        /* General */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -26,71 +27,89 @@
         .circle-image {
             width: 100px;
             height: 100px;
-            background-color: black;
+            background-color: #9c3636;
             border-radius: 50%;
             display: inline-block;
-            background-image: url('profile.jpg'); /* Replace with your image file */
+            background-image: url('assets/img/girl3.png'); /* Ganti dengan file gambar Anda */
             background-size: cover;
             background-position: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Name Box */
         .rectangle-bar {
-            width: 300px;
-            height: 50px;
-            background-color: black;
+            width: 350px;
+            height: 60px;
+            background-color: #9c3636;
             margin: 20px auto;
             color: white;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            font-size: 18px;
+            padding-left: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
         }
 
-        /* Social Media Links */
-        .small-circles {
-            margin: 20px;
-        }
-
-        .small-circle {
-            width: 30px;
-            height: 30px;
-            background-color: black;
-            border-radius: 50%;
-            display: inline-block;
-            margin: 0 10px;
-        }
-
-        .small-circle a {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
+        .rectangle-bar::before {
+            content: '\1F464'; /* Unicode character for user icon */
+            font-size: 30px;
+            margin-right: 10px;
         }
 
         /* Date and Time Box */
         .small-rectangle {
-            width: 150px;
-            height: 30px;
-            background-color: black;
+            width: 240px;
+            height: 40px;
+            background-color: #9c3636;
             margin: 20px auto;
-            color: white;
+            color: rgb(255, 255, 255);
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 14px;
+            font-size: 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .small-rectangle::before {
+            content: '\23F0'; /* Unicode character for clock icon */
+            font-size: 20px;
+            margin-right: 8px;
         }
 
         h1 {
             font-size: 24px;
-            color: #333;
+            color: #9c3636;
+        }
+
+        /* Back Button */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.history.back();">
+        <img src="assets/img/arrow-back.png" alt="Back"> <!-- Ganti dengan ikon back Anda -->
+    </button>
+
+    <br><br><br>
     <!-- Profile Picture -->
     <div class="image-container">
         <div class="circle-image"></div>
@@ -98,14 +117,17 @@
 
     <!-- Name Box -->
     <div class="rectangle-bar">
-        Your Full Name
+        Alif Yasir Athoriq
     </div>
 
     <!-- Social Media Links -->
-    <div class="small-circles">
-        <div class="small-circle"><a href="https://facebook.com" target="_blank">FB</a></div>
-        <div class="small-circle"><a href="https://twitter.com" target="_blank">TW</a></div>
-        <div class="small-circle"><a href="https://instagram.com" target="_blank">IG</a></div>
+    <div class="row social-links">
+        <ul class="nav mx-auto">
+            <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/alif.yasirathoriq.1 "><img src="assets/img/facebook.png" alt=""></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="https://x.com/AthoriqYasir"><img src="assets/img/twitter.png" alt=""></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="https://www.instagram.com/alif.ya_31/"><img src="assets/img/instagram.png" alt=""></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="https://www.linkedin.com/in/alif-yasir-athoriq-238a68298/"><img src="assets/img/linkedin.png" alt=""></a> </li>
+        </ul>
     </div>
 
     <!-- Date and Time Box -->

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page with Animation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px; /* Perbesar padding agar tidak terlalu ke pinggir */
+}
+
+    /* Navbar */
+    .navbar {
+  background: rgba(51, 51, 51, 0.9); /* Lebih transparan */
+  color: #fff;
+  padding: 15px 30px; /* Tambahkan padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+  z-index: 1000;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  font-weight: 600; /* Buat lebih tebal */
+  margin-left: 20px; /* Sesuaikan margin antar link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ff4081; /* Ubah warna hover */
+}
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar .nav-links li {
+      margin-left: 30px;
+    }
+
+    .navbar .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      color: #e90e65;
+    }
+
+    /* Hero Section */
+    /* Hero Section */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding-top: 100px; /* Sesuaikan padding */
+  padding-left: 20px; /* Hindari teks terlalu ke pinggir */
+  padding-right: 20px;
+}
+
+.hero-text {
+  max-width: 600px;
+  padding-left: 20px; /* Tambahkan padding pada sisi kiri */
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  padding: 12px 30px; /* Perbesar tombol */
+  background: #e90e65;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #d50e5b;
+}
+
+    .hero-image img {
+      max-width: 100%;
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* Features Section */
+    .features-section {
+      padding: 100px 0;
+      background: #fff;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    .features-grid {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .feature-item {
+      width: 30%;
+      padding: 20px;
+      background: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      animation: slideInUp 1s ease-in;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 100px 0;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      padding: 12px 30px;
+      background: #e90e65;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #d50e5b;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 30px 0;
+      background: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo"></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li > <a href="index.html" tabindex="-1" aria-disabled="true">Back</a></li>
+        <li><a href="#features">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="profiledasar.html">profile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-text">
+      <h2>Welcome to Alif Web</h2>
+      <p>you can see a lot of my work by removing newpage.html from AlifThoriq.github.io (to see all my website)</p>
+      <a href="#features" class="cta-button">let's dive in </a>
+    </div>
+    <div class="hero-image">
+      <img src="https://via.placeholder.com/500" alt="Hero Image">
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2 class="section-title">some skill</h2>
+      <div class="features-grid">
+        <div class="feature-item" id="feature-1">
+          <h3>Writter</h3>
+          <p>Membuat tulisan di beberapa platform seperti wattpad dan beberapa platform lainnya.</p>
+        </div>
+        <div class="feature-item" id="feature-2">
+          <h3>Flutter </h3>
+          <p>making app such as Donasi app using flutter.</p>
+        </div>
+        <div class="feature-item" id="feature-3">
+          <h3>Modern UI/UX</h3>
+          <p>Focused on intuitive design with user-friendly interfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get in Touch with me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Your Brand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Fade in animations
+    window.addEventListener('scroll', function() {
+      const features = document.querySelectorAll('.feature-item');
+      features.forEach(feature => {
+        const featureTop = feature.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (featureTop < windowHeight - 100) {
+          feature.style.animation = 'slideInUp 1s forwards';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
