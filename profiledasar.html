@@ -65,7 +65,6 @@
             width: 240px;
             height: 40px;
             background-color: #9c3636;
-            /* background: linear-gradient(45deg, #9c3636, #d46767); */
             margin: 20px auto;
             color: rgb(255, 255, 255);
             display: flex;
@@ -87,31 +86,30 @@
             color: #9c3636;
         }
 
-        
+        /* Back Button */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 40px;
+            height: 40px;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md fixed-top maine-menu">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> 
-                <span class="bar1"></span> 
-                <span class="bar2"></span> 
-                <span class="bar3"></span>
-            </button>
-            <div id="my-nav" class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#activity">Activity</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#testimonial">Quotes</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <br> <br> <br>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.history.back();">
+        <img src="assets/img/arrow-back.png" alt="Back"> <!-- Ganti dengan ikon back Anda -->
+    </button>
+
+    <br><br><br>
     <!-- Profile Picture -->
     <div class="image-container">
         <div class="circle-image"></div>
