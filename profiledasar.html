@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Image placeholder */
+        .image-container {
+            margin-top: 50px;
+        }
+
+        .circle-image {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .rectangle-bar {
+            width: 300px;
+            height: 50px;
+            background-color: black;
+            margin: 20px auto;
+        }
+
+        .small-circles {
+            display: inline-block;
+            margin: 10px 10px;
+        }
+
+        .small-circle {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .small-rectangle {
+            width: 80px;
+            height: 20px;
+            background-color: black;
+            margin: 10px auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Date and Time */
+        .date-time {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Picture Section -->
+    <div class="image-container">
+        <div class="circle-image"></div>
+    </div>
+
+    <!-- Heading -->
+    <h1>Your Title Goes Here</h1>
+
+    <!-- Rectangle Bar -->
+    <div class="rectangle-bar"></div>
+
+    <!-- Small Circles -->
+    <div class="small-circles">
+        <div class="small-circle"></div>
+        <div class="small-circle"></div>
+    </div>
+
+    <!-- Small Rectangle -->
+    <div class="small-rectangle"></div>
+
+    <!-- Footer with Date and Time -->
+    <footer>
+        <div class="date-time">
+            <!-- Current Date and Time -->
+            <p id="datetime"></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to get the current date and time -->
+    <script>
+        const dateTime = new Date();
+        document.getElementById("datetime").innerHTML = dateTime.toLocaleString();
+    </script>
+</body>
+</html>
